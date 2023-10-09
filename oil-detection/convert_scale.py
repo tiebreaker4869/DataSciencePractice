@@ -27,7 +27,7 @@ def convert(input_folder, txt_folder, final_result):
                     right = int(right * img_width)
                     bottom = int(bottom * img_height)
                     
-                    final_lines = final_lines + 'tower' + ' ' + confidence_str + ' ' + str(left) + ' ' + str(top) + ' ' + str(right) + ' ' + str(bottom) + '\n'
+                    final_lines = final_lines + 'oil' + ' ' + confidence_str + ' ' + str(left) + ' ' + str(top) + ' ' + str(right) + ' ' + str(bottom) + '\n'
                 with open(final_txt_file, "w") as f:
                     f.write(final_lines)
 
@@ -39,7 +39,7 @@ def main():
     parser.add_argument("--final_result", type=str, required=True, help="Output folder for final result txt.")
     args = parser.parse_args()
 
-    os.makedirs(args.output_folder, exist_ok=True)
+    os.makedirs(args.final_result, exist_ok=True)
     convert(args.input_folder, args.txt_folder, args.final_result)
 
 if __name__ == "__main__":
