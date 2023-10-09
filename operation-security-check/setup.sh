@@ -5,7 +5,7 @@ cd yolov5
 pip install -r requirements.txt  # install
 cd ..
 
-wget https://box.nju.edu.cn/f/2624b1ab1df948fbbd0a/?dl=1
+wget https://box.nju.edu.cn/f/c07a22e992e543fcb081/?dl=1
 
 unzip dataset.zip
 
